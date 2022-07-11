@@ -8,6 +8,18 @@
 body{
     background-image: url("../images/wallpaper.jpg");
     background-size: cover;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.App {
+    padding-top: 130px;
+}
+
+@media (max-width: 700px){
+    .App{
+        padding-top: 70px;
+    }
 }
 
 
