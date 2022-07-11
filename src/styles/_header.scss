@@ -1,0 +1,23 @@
+.header{
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 7vw;
+    color: white;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
+}
+
+@media (max-width: 1000px){
+    .header{
+        padding-top: 15px;
+        padding-bottom: 10px;
+        font-size: 6.8vw;
+    }
+}
