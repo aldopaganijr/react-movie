@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
-import RestoreIcon from '@material-ui/icons/Restore';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
+import TvIcon from '@mui/icons-material/Tv';
+import TheatersIcon from '@mui/icons-material/Theaters';
+import SearchIcon from '@mui/icons-material/Search';
+import { useHistory } from "react-router-dom";
+
 
 const useStyles = makeStyles({
   root: {
@@ -20,6 +23,20 @@ const useStyles = makeStyles({
 export default function SimpleBottomNavigation() {
   const classes = useStyles();
   const [value, setValue] = React.useState(0);
+  const history = useHistory();
+
+ 
+  useEffect(() => {
+    if (value === 0) {
+      history.push("/");
+    } else if (value === 1) {
+      history.push("/movies");
+    } else if (value === 2) {
+      history.push("/series");
+    } else if (value === 3) {
+      history.push("/search");
+    }
+  }, [value, history]);
 
   return (
     <BottomNavigation
@@ -30,9 +47,26 @@ export default function SimpleBottomNavigation() {
       showLabels
       className={classes.root}
     >
-      <BottomNavigationAction label="Recents" icon={<RestoreIcon />} />
-      <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-      <BottomNavigationAction label="Nearby" icon={<LocationOnIcon />} />
+      <BottomNavigationAction
+        style={{ color: "white" }}
+        label="Trending"
+        icon={<LocalFireDepartmentIcon />}
+      />
+      <BottomNavigationAction
+        style={{ color: "white" }}
+        label="Movies"
+        icon={<TheatersIcon />}
+      />
+      <BottomNavigationAction
+        style={{ color: "white" }}
+        label="TV Series"
+        icon={<TvIcon />}
+      />
+      <BottomNavigationAction
+        style={{ color: "white" }}
+        label="Search"
+        icon={<SearchIcon />}
+      />
     </BottomNavigation>
   );
 }
