@@ -1,0 +1,39 @@
+.footer {
+    width: 100%;
+    position: sticky;
+    display: block;
+    color: white;
+    background-color: #1E4488;
+    padding-bottom: 5rem;
+    padding-top: 2.5rem;
+    max-width: 100%;
+
+}
+
+.copyright{
+    display: flex;
+    justify-content: left;
+    padding-left: 1rem;
+    max-width: 100vw;
+    margin-bottom: .5rem;
+}
+
+.instagram{
+    padding-left: 1rem;
+    padding-right: 1px;
+}
+
+.facebook{
+    padding-left: 1rem;
+    padding-right: 1px;
+}
+
+.twitter{
+    padding-left: 1rem;
+    padding-right: 1px;
+}
+
+a:link, a:visited,  a:hover, a:active {
+    text-decoration: none; 
+    color: white; 
+}

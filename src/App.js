@@ -6,6 +6,7 @@ import Trending from "./Pages/Trending/Trending";
 import Movies from "./Pages/Movies/Movies";
 import Series from "./Pages/Series/Series";
 import Search from "./Pages/Search/Search"
+import Footer from "./components/Footer";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 
 
@@ -24,6 +25,7 @@ function App() {
         </Container>
       </div>
       <SimpleBottomNavigation />
+      <Footer />
     </BrowserRouter>
   );
 }
