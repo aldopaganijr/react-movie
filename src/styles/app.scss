@@ -6,8 +6,7 @@
 }
 
 body{
-    background-image: url("../images/wallpaper.jpg");
-    background-size: cover;
+    background-color: #ffffff;
     min-height: 100vh;
     min-width: 100vw;
 }
@@ -25,3 +24,4 @@ body{
 
 @import "./header";
 @import "./singleContent";
+@import "./trending";
