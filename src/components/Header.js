@@ -6,6 +6,7 @@ function Header() {
           <span className='header'>
               BLOCKBUSTER
           </span>
+          
 
   )
 }

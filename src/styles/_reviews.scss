@@ -1,0 +1,28 @@
+.reviews{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    min-width: 100%;
+
+    @media (max-width: 1200px){
+        display: none;
+    }
+}
+
+.icon{
+    width: 14.5vw;
+    height: 12.5vh;
+    padding: 2rem  2.4rem;
+    filter: saturate(0%);
+    cursor: pointer;
+}
+
+.icon:hover{
+    filter: saturate(100%)
+}
+
+a:link, a:visited,  a:hover, a:active {
+    text-decoration: none; 
+    color: white; 
+}

@@ -20,6 +20,7 @@ function Trending() {
 
 
   return (
+
     <div>
         <span className="pageTitle">Trending Today</span>
         <div className='trending'>
