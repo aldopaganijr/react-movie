@@ -3,12 +3,14 @@ import axios from 'axios';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import SingleContent from '../../components/SingleContent';
+import CustomPagination from '../../components/CustomPagination';
 
-function Trending() {
+const Trending = () => {
  const [content, setContent] = useState([]);
+ const [page, setPage] = useState([1])
 
   const fetchTrending = async () => {
-    const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}`)
+    const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_API_KEY}&page=${page}`)
     setContent(data.results)
   };
 
@@ -16,13 +18,13 @@ function Trending() {
 
   useEffect(() => {
     fetchTrending();
-  },[]);
+  },[page]);
 
 
   return (
 
     <div>
-        <span className="pageTitle">Trending Today</span>
+        <span className="pageTitle">Trending</span>
         <div className='trending'>
             {content && content.map((c) => 
             <SingleContent 
@@ -36,8 +38,10 @@ function Trending() {
             />
             )}
         </div>
+        <CustomPagination variant="outlined" setPage={setPage} />
     </div>
   )
 }
 
 export default Trending
+

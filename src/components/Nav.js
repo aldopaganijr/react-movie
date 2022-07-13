@@ -14,7 +14,7 @@ const useStyles = makeStyles({
     width: "100%",
     position: "fixed", 
     bottom: 0,
-    backgroundColor: "#FCC039",
+    background: "linear-gradient(to bottom, #02386E, #00172D)",
     zIndex: 100,
   },
 });
@@ -24,7 +24,6 @@ export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
   const history = useHistory();
 
- 
   useEffect(() => {
     if (value === 0) {
       history.push("/");
@@ -47,22 +46,22 @@ export default function SimpleBottomNavigation() {
       className={classes.root}
     >
       <BottomNavigationAction
-        style={{ color: "#1E4488" }}
+        style={{ color: "#FCC039" }}
         label="Trending"
         icon={<LocalFireDepartmentIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "#1E4488" }}
+        style={{ color: "#FCC039" }}
         label="Movies"
         icon={<TheatersIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "#1E4488" }}
+        style={{ color: "#FCC039" }}
         label="TV Series"
         icon={<TvIcon />}
       />
       <BottomNavigationAction
-        style={{ color: "#1E4488" }}
+        style={{ color: "#FCC039" }}
         label="Search"
         icon={<SearchIcon />}
       />
