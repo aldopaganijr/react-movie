@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import BottomNavigation from '@material-ui/core/BottomNavigation';
 import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
@@ -7,6 +6,8 @@ import TvIcon from '@mui/icons-material/Tv';
 import TheatersIcon from '@mui/icons-material/Theaters';
 import SearchIcon from '@mui/icons-material/Search';
 import { useHistory } from "react-router-dom";
+import { useEffect } from 'react';
+import React from 'react';
 
 
 const useStyles = makeStyles({
@@ -25,6 +26,7 @@ export default function SimpleBottomNavigation() {
   const history = useHistory();
 
  
+
   useEffect(() => {
     if (value === 0) {
       history.push("/");

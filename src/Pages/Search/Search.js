@@ -3,7 +3,7 @@ import React from 'react'
 const search = () => {
   return (
     <div>
-        <span className='pageName'>Search</span>
+        <span className='pageTitle'>Search</span>
     </div>
   )
 }
