@@ -3,7 +3,7 @@ import React from 'react'
 function Header() {
   return (
 
-          <span className='header'>
+          <span onClick={() => window.scroll(0,0)} className='header'>
               BLOCKBUSTER
           </span>
           
