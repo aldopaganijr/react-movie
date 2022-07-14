@@ -7,6 +7,9 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import CustomPagination from '../../components/CustomPagination';
 import SingleContent from '../../components/SingleContent';
+import { motion } from "framer-motion";
+import { slider, sliderContainer } from '../../animation';
+import styled from "styled-components";
 
 
 
@@ -40,7 +43,13 @@ const Search = () => {
 }, [page]);
 
   return (
-    <div>
+    <motion.div exit="exit"  initial="hidden" animate="show">
+        <motion.div variants={sliderContainer}>
+          <Frame1 variants={slider}></Frame1>
+          <Frame2 variants={slider}></Frame2>
+          <Frame3 variants={slider}></Frame3>
+          <Frame4 variants={slider}></Frame4>
+        </motion.div>
       <div style={{display: "flex",}}>
         <TextField
             label="Search"
@@ -80,8 +89,28 @@ const Search = () => {
         <CustomPagination setPage={setPage} numOfPages={numOfPages} />
       )}
     </div>
-    </div>
+    </motion.div>
   )
 }
+
+const Frame1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to bottom, #02386E, #00172D);
+  z-index: 2;
+`;
+const Frame2 = styled(Frame1)`
+  background: #FCC039;
+`;
+const Frame3 = styled(Frame1)`
+  background: linear-gradient(to bottom, #02386E, #00172D);
+`;
+const Frame4 = styled(Frame1)`
+  background: #FCC039;
+`;
+
 
 export default Search
