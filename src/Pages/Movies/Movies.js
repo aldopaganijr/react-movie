@@ -4,6 +4,7 @@ import { useEffect } from 'react';
 import CustomPagination from '../../components/CustomPagination';
 import SingleContent from '../../components/SingleContent';
 
+
 const Movies = () => {
 
   const [page, setPage ] = useState(1);
