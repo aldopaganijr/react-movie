@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import { useState } from 'react'
 import axios from 'axios'
 import { motion } from "framer-motion";
-import { slider, sliderContainer } from '../../animation';
+import { slider, sliderContainer, pageAnim } from '../../animation';
 import styled from "styled-components";
 
 const Series = () => {
@@ -27,7 +27,7 @@ const Series = () => {
 
   return (
     <>
-     <motion.div className='pageTitle'  exit="exit"  initial="hidden" animate="show">TV Series
+     <motion.div className='pageTitle' variants={pageAnim}  exit="exit"  initial="hidden" animate="show">TV Series
         <motion.div variants={sliderContainer}>
           <Frame1 variants={slider}></Frame1>
           <Frame2 variants={slider}></Frame2>

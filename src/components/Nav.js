@@ -1,6 +1,6 @@
-import { makeStyles } from '@material-ui/core/styles';
-import BottomNavigation from '@material-ui/core/BottomNavigation';
-import BottomNavigationAction from '@material-ui/core/BottomNavigationAction';
+import { makeStyles } from "@material-ui/core/styles";
+import BottomNavigation from '@mui/material/BottomNavigation';
+import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import LocalFireDepartmentIcon from '@mui/icons-material/LocalFireDepartment';
 import TvIcon from '@mui/icons-material/Tv';
 import TheatersIcon from '@mui/icons-material/Theaters';
@@ -17,7 +17,7 @@ const useStyles = makeStyles({
     bottom: 0,
     background: "linear-gradient(to bottom, #02386E, #00172D)",
     zIndex: 100,
-  },
+}
 });
 
 export default function SimpleBottomNavigation() {
@@ -41,13 +41,13 @@ export default function SimpleBottomNavigation() {
 
   return (
     <BottomNavigation
-      value={value}
-      onChange={(event, newValue) => {
-        setValue(newValue);
-      }}
-      showLabels
-      className={classes.root}
-    >
+    value={value}
+    onChange={(event, newValue) => {
+      setValue(newValue);
+    }}
+    showLabels
+    className={classes.root}
+  >
       <BottomNavigationAction
         style={{ color: "#FCC039" }}
         label="Trending"

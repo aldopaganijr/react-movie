@@ -1,8 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
 import { Tab, Tabs, TextField } from '@mui/material';
-import { Button } from '@material-ui/core';
-import SearchIcon from "@material-ui/icons/Search";
+import { Button } from '@mui/material';
+import SearchIcon from '@mui/icons-material/Search';
 import axios from 'axios';
 import { useEffect } from 'react';
 import CustomPagination from '../../components/CustomPagination';
