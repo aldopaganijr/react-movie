@@ -33,7 +33,8 @@ Project Description
 
 Wireframes 
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F5O5fwWXqpaQleBPSzb72kT%2FUntitled%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+![wireframes](https://user-images.githubusercontent.com/105445990/179256803-2f00a5a3-2a84-484b-81ff-8c7894e81548.png)
+
 
 
 MVP 
