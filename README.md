@@ -46,7 +46,7 @@ MVP
 
 STRECH 
 
-* A link to the movie trailer somewhere
+* A link to the movie trailer somewhere!
 * A set of smooth animations 
 * Replicating the blockbuster feel 
 
