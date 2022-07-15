@@ -17,4 +17,4 @@ Component Hierarchy
 Provide a link to a diagram of showing the React component hierarchy of your app.
 
 OPTIONAL:
-You can optionally can describe the components further and indicate which will have state or props.
+You can optionally can describe the components further and indicate which will have state or props!!
