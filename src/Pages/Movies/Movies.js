@@ -4,7 +4,7 @@ import { useEffect } from 'react';
 import CustomPagination from '../../components/CustomPagination';
 import SingleContent from '../../components/SingleContent';
 import { motion } from "framer-motion";
-import { slider, sliderContainer, pageAnim } from '../../animation';
+import { slider, sliderContainer } from '../../animation';
 import styled from "styled-components";
 
 
@@ -29,7 +29,7 @@ const Movies = () => {
 
   return (
     <>
-      <motion.div variants={pageAnim} className='pageTitle' exit="exit" initial="hidden" animate="show">Movies
+      <motion.div className='pageTitle' exit="exit" initial="hidden" animate="show">Movies
         <motion.div variants={sliderContainer}>
           <Frame1 variants={slider}></Frame1>
           <Frame2 variants={slider}></Frame2>
