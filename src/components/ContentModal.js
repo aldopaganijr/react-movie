@@ -39,6 +39,7 @@ export default function ContentModal({children, media_type, id}) {
   };
 
 
+  
   const fetchData = async () => {
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
@@ -47,7 +48,6 @@ export default function ContentModal({children, media_type, id}) {
     setContent(data);
     // console.log(data);
   };
-
 
   const fetchVideo = async () => {
     const { data } = await axios.get(
@@ -72,7 +72,7 @@ export default function ContentModal({children, media_type, id}) {
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
       >
-        <Box sx={{ ...style, width: "50%", height: "50%", borderRadius: "2%"}}>
+        <Box className='box' sx={{ ...style, width: "50%", height: "50%", borderRadius: "2%"}}>
         {content && (
         <div className='contentModal'>
             <img src={ content.poster_path ? `${img_500}/${content.poster_path}` : unavailable}
