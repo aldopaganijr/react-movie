@@ -1,3 +1,45 @@
+<h1 align="center">Hi 👋, I'm Aldo Pagani Jr.</h1>
+<h3 align="center">This Project is a Movie Application</h3>
+
+- 🌱 Im currently learning **react**
+
+- 👨‍💻 All my projects are linked here! [https://aldopaganijr.netlify.app](https://aldopaganijr.netlify.app)
+
+- 📫 How to reach me? **https://www.linkedin.com/in/aldo-pagani-jr-a4025923a/**
+
+- 📄 Know about my experiences [https://docs.google.com/document/d/10iUKW3N3Jh1afxzM6XJ0rTzDN7mBSK3GDA6hMwbKTbU/edit?usp=sharing](https://docs.google.com/document/d/10iUKW3N3Jh1afxzM6XJ0rTzDN7mBSK3GDA6hMwbKTbU/edit?usp=sharing)
+
+- ⚡ Fun fact **node modules suck**
+
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/aldo-pagani-jr-a4025923a/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/aldo-pagani-jr-a4025923a/" height="30" width="40" /></a>
+</p>
+
+<h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> </p>
+
+![blockbuster](https://user-images.githubusercontent.com/105445990/179253286-4e67cf7c-ee80-4b33-be6c-8db19e942761.png)
+
+
+Project Description
+
+* My application is called BlockBuster. It is supposed to highlight the glorious days of one of the most pivotal Video-renting services of all time. In this project, my mission is to bring blockbuster back to life with a little bit more exitement and modernism. Overall what this application is set to is show any movie you look for and give you details about it. It will also feature a popular movie section. Among other things.
+Wireframes Links to your hand drawn or digital wireframes.
+
+MVP User Stories List the user stories that will be required to support your project MVP. Optionally, you may list post MVP (stretch goals) under a separate heading.
+
+API 
+
+* https://developers.themoviedb.org/3/getting-started/introduction
+
+Component Hierarchy Provide a link to a diagram of showing the React component hierarchy of your app.
+
+OPTIONAL: You can optionally can describe the components further and indicate which will have state or props!!
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
