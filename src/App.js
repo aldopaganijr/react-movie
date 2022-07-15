@@ -9,6 +9,7 @@ import Search from "./Pages/Search/Search"
 import Footer from "./components/Footer";
 import Reviews from "./components/Reviews";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
+import React from "react";
 
 
 function App() {
