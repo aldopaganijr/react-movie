@@ -56,6 +56,30 @@ API
 
 Component Hierarchy 
 
+PRINCIPLE FILES
+* App.Js
+* App.Scss
+* Animation.js
+
+MAIN PAGES
+* Trending
+* Movies
+* Search
+* Series
+
+COMPONENTS 
+* Header.js
+* Footer.js
+* Nav.js
+* SingleContent.js
+
+SCSS PARTIALS
+* Header.scss
+* Footer.scss
+* Nav.scss
+* SingleContent.scss
+
+
 
 
 
