@@ -22,6 +22,10 @@
 ![blockbuster](https://user-images.githubusercontent.com/105445990/179253286-4e67cf7c-ee80-4b33-be6c-8db19e942761.png)
 
 
+Direct Link to project 
+
+* blockbusterrated.netlify.app/
+
 Project Description
 
 * My application is called BlockBuster. It is supposed to highlight the glorious days of one of the most pivotal Video-renting services of all time. In this project, my mission is to bring blockbuster back to life with a little bit more exitement and modernism. Overall what this application is set to is show any movie you look for and give you details about it. It will also feature a popular movie section. Among other things.
