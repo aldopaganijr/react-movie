@@ -24,7 +24,7 @@
 
 Direct Link to project 
 
-* blockbusterrated.netlify.app/
+* https://blockbusterrated.netlify.app/
 
 Project Description
 
