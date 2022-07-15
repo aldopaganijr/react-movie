@@ -64,9 +64,14 @@
   }
 }
 
-// @media (max-width: 600px) {
-//   .contentModal {
-//     display: flex;
-//     width: 80%;
-//   }
-// }
+@media (max-width: 600px) {
+  .contentModal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contentModalPortrait {
+    display: none;
+}
+}
