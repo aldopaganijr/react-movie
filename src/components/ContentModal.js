@@ -24,7 +24,6 @@ const style = {
   pb: 3,
 };
 
-
 export default function ContentModal({children, media_type, id}) {
   const [open, setOpen] = React.useState(false);
   const [content, setContent] = useState();
@@ -38,15 +37,20 @@ export default function ContentModal({children, media_type, id}) {
     setOpen(false);
   };
 
-
+  
   
   const fetchData = async () => {
+
+    if(media_type === undefined){
+      media_type = "movie";
+    }
+ 
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
     );
 
     setContent(data);
-    // console.log(data);
+     //console.log(data);
   };
 
   const fetchVideo = async () => {

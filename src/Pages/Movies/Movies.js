@@ -16,8 +16,9 @@ const Movies = () => {
 
   const fetchMovies = async () => {
     const { data } = await axios.get(`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=${page}`)
-    
+    console.log(data)
     setContent(data.results)
+
 
   }
 
@@ -28,7 +29,7 @@ const Movies = () => {
   
 
   return (
-    <>
+    <div>
       <motion.div className='pageTitle' exit="exit" initial="hidden" animate="show">Movies
         <motion.div variants={sliderContainer}>
           <Frame1 variants={slider}></Frame1>
@@ -51,9 +52,10 @@ const Movies = () => {
             )}
         </div>
         <CustomPagination variant="outlined" setPage={setPage} />
-      </>
+      </div>
   )
 }
+
 
 const Frame1 = styled(motion.div)`
   position: fixed;
