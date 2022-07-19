@@ -35,15 +35,15 @@ const Search = () => {
     );
     setContent(data.results);
     setNumOfPages(data.total_pages);
-    console.log(data);
+    //console.log(data);
   } catch (error) {
-    console.error(error);
+    //console.error(error);
   }
 };
 
  useEffect(() => {
   window.scroll(0, 0);
-  fetchSearch();
+  //fetchSearch();
   // eslint-disable-next-line
 }, [page]);
 
@@ -75,7 +75,7 @@ const Search = () => {
             poster={c.poster_path}
             title={c.title || c.name} 
             date={c.first_air_date || c.release_date}
-            media_type={type ? 'tv' : 'Movie'}
+            media_type={type ? 'tv' : 'movie'}
             vote_average={c.vote_average}
             />
             )}

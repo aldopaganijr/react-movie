@@ -45,7 +45,7 @@ export default function ContentModal({children, media_type, id}) {
     if(media_type === undefined){
       media_type = "movie";
     }
- 
+    console.log(media_type, id)
     const { data } = await axios.get(
       `https://api.themoviedb.org/3/${media_type}/${id}?api_key=${process.env.REACT_APP_API_KEY}&language=en-US`
     );
@@ -63,8 +63,8 @@ export default function ContentModal({children, media_type, id}) {
   };
 
   useEffect(() => {
-    fetchData();
-    fetchVideo();
+     fetchData();
+     fetchVideo();
     // eslint-disable-next-line
   }, []);
 
