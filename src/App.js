@@ -7,9 +7,9 @@ import Movies from "./Pages/Movies/Movies";
 import Series from "./Pages/Series/Series";
 import Search from "./Pages/Search/Search"
 import Footer from "./components/Footer";
-import Reviews from "./components/Reviews";
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import React from "react";
+import BubblesEffect from "./components/BubblesEffect";
 
 
 function App() {
@@ -17,6 +17,7 @@ function App() {
     
       <BrowserRouter>
         <Header />
+        <BubblesEffect />
         <div className="app">
           <Container>
             <Switch>
@@ -28,8 +29,8 @@ function App() {
           </Container>
         </div>
         <SimpleBottomNavigation />
-        <Reviews />
         <Footer />
+        
       </BrowserRouter>
   );
 }

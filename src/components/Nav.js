@@ -16,9 +16,6 @@ const useStyles = makeStyles({
     width: "100%",
     position: "fixed",
     bottom: 0,
-    backgroundColor: "rgba(255, 255, 255, 0.30)",
-    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
-    borderRadius: "16px",
     zIndex: 100,
   },
 });
@@ -50,6 +47,7 @@ export default function SimpleBottomNavigation() {
     }}
     showLabels
     className={classes.root}
+    style={{backgroundColor: "rgba(16, 18, 27, 0.50)"}}
   >
       <BottomNavigationAction
         style={{ color: "#FCC039" }}
