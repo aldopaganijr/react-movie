@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import SingleContent from '../../components/SingleContent'
 import CustomPagination from '../../components/CustomPagination'
 import { useEffect } from 'react'
@@ -26,7 +26,7 @@ const Series = () => {
   }, [page])
 
   return (
-    <>
+    <Fragment>
      <motion.div className='pageTitle' exit="exit"  initial="hidden" animate="show">TV Series
         <motion.div variants={sliderContainer}>
           <Frame1 variants={slider}></Frame1>
@@ -49,28 +49,27 @@ const Series = () => {
           )}
       </div>
       <CustomPagination variant="outlined" setPage={setPage} />
-    </>
+    </Fragment>
   )
 }
 
 
 const Frame1 = styled(motion.div)`
+  background: linear-gradient(to bottom, #02386E, #00172D);
   position: fixed;
   left: 0;
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to bottom, #02386E, #00172D);
-  z-index: 2;
 `;
 const Frame2 = styled(Frame1)`
-  background: #FFBF34;
+  background: #FCC039;
 `;
 const Frame3 = styled(Frame1)`
   background: linear-gradient(to bottom, #02386E, #00172D);
 `;
 const Frame4 = styled(Frame1)`
   background: #FCC039;
+  
 `;
-
 export default Series

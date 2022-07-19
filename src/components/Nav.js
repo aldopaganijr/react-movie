@@ -10,14 +10,17 @@ import { useEffect } from 'react';
 import React from 'react';
 
 
+
 const useStyles = makeStyles({
   root: {
     width: "100%",
-    position: "fixed", 
+    position: "fixed",
     bottom: 0,
-    background: "linear-gradient(to bottom, #02386E, #00172D)",
+    backgroundColor: "rgba(255, 255, 255, 0.30)",
+    boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+    borderRadius: "16px",
     zIndex: 100,
-}
+  },
 });
 
 export default function SimpleBottomNavigation() {

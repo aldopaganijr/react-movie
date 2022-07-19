@@ -58,13 +58,12 @@ const Movies = () => {
 
 
 const Frame1 = styled(motion.div)`
+  background: linear-gradient(to bottom, #02386E, #00172D);
   position: fixed;
   left: 0;
   top: 10%;
   width: 100%;
   height: 100vh;
-  background: linear-gradient(to bottom, #02386E, #00172D);
-  z-index: 2;
 `;
 const Frame2 = styled(Frame1)`
   background: #FCC039;
@@ -74,6 +73,7 @@ const Frame3 = styled(Frame1)`
 `;
 const Frame4 = styled(Frame1)`
   background: #FCC039;
+  
 `;
 
 

@@ -4,6 +4,12 @@
     justify-content:space-between;
     flex-wrap: wrap;
     min-width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    backdrop-filter: blur(2.2px);
+    -webkit-backdrop-filter: blur(2.2px);
+    border: 1px solid rgba(255, 255, 255, 0.28);
 
     @media (max-width: 1200px){
         display: none;
@@ -14,7 +20,7 @@
     width: 14.5vw;
     height: 12.5vh;
     padding: 2rem  2.4rem;
-    filter: saturate(0%);
+    filter: saturate(20%);
     cursor: pointer;
 }
 
