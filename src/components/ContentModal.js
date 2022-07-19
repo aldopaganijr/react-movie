@@ -106,7 +106,7 @@ export default function ContentModal({children, media_type, id}) {
                     className='link'
                     variant="contained"
                     startIcon={<YouTubeIcon />}
-                    color="warning"
+                    color="primary"
                     target="__blank"
                     href={`https://www.youtube.com/watch?v=${video}`}
                   >

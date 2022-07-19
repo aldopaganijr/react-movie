@@ -8,8 +8,13 @@ import { useEffect } from 'react';
 import CustomPagination from '../../components/CustomPagination';
 import SingleContent from '../../components/SingleContent';
 import { motion } from "framer-motion";
+import {createTheme, ThemeProvider } from '@mui/material/styles';
 
-
+const darkTheme = createTheme({
+  palette: {
+    mode: 'dark',
+  },
+});
 
 
 const Search = () => {
@@ -44,23 +49,22 @@ const Search = () => {
 
   return (
     <motion.div exit="exit"  initial="hidden" animate="show">
-      <div style={{display: "flex",}}>
+      <ThemeProvider style={{flex: 1}} theme={darkTheme} >
         <TextField
+            style={{display:"flex"}}
             label="Search"
-            style={{flex: 1}}
             className="Search"
             id="filled-hidden-label-normal"
             variant="filled"
             onChange={(e) => setSearchText(e.target.value)}
           />  
-
-          <Button style={{marginLeft: "15px"}} onClick={fetchSearch}>
+          <Button style={{marginLeft: "79vw", marginTop: "-5rem"}} onClick={fetchSearch}>
              <SearchIcon/>
           </Button>
-      </div>
+      </ThemeProvider>
       <Tabs value={type} textColor="primary" onChange={(event, newValue) => {setType(newValue); setPage(1);}}>
-          <Tab style={{width: "50%"}} label="Search Movies"/>
-          <Tab style={{width: "50%"}} label="Search TV Series"/>
+          <Tab style={{width: "50%", color: "white"}} label="Search Movies"/>
+          <Tab style={{width: "50%", color: "white"}} label="Search TV Series"/>
       </Tabs>
       <div>
         <div className='trending'>
