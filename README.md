@@ -5,7 +5,7 @@
 
 - 🌱 Im currently learning **react**
 
-- 👨‍💻 All my projects are linked here! [https://aldopaganijr.netlify.app](https://aldopaganijr.netlify.app)
+- 👨‍💻 All my projects are linked here [https://aldopaganijr.netlify.app](https://aldopaganijr.netlify.app)
 
 - 📫 How to reach me? **https://www.linkedin.com/in/aldo-pagani-jr-a4025923a/**
 
