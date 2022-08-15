@@ -3,6 +3,8 @@
 
 ![blockbusterrated netlify app_](https://user-images.githubusercontent.com/105445990/179650869-8b42b70a-05f3-470b-8524-beba631e995e.png)
 
+- 🗓 Project Status? **Completed**
+
 - 🌱 Im currently learning **react**
 
 - 👨‍💻 All my projects are linked here [https://aldopaganijr.netlify.app](https://aldopaganijr.netlify.app)
